@@ -11,12 +11,16 @@ class PriorityOrder:
     Key is a frozenset of the stronger factors, value is a frozenset of the weaker factors.
     """
 
-    def __init__(self, empty_sides=False):
+    def __init__(self, cb, empty_sides=False):
+        self.cb = cb
         self.order = defaultdict(set)
         self.defeated_factor_index = defaultdict(set)
         self.admissibility_constraints = AdmissibilityConstraints(self)
         self.PD = PowerDetector(self)
         self.empty_sides=empty_sides
+
+    def get_cases(self):
+        return self.cb.cases
 
     def get_incons_pairs_with_case(self, new_reason, new_defeated):
         """
@@ -41,7 +45,6 @@ class PriorityOrder:
                     incons_pairs.append((reason, defeated))
 
         return incons_pairs
-
 
     def is_existing_claim(self, new_reason, new_defeated):
         """Checks priority order remains the same"""

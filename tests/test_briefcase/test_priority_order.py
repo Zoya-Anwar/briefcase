@@ -73,7 +73,7 @@ def test_consistency(test_cases, test_case_name):
 def test_add_order_with_subsets_id(test_cases, test_case_name):
     cs = test_cases[test_case_name]
     case = Case.from_dict(cs[0])  # get first case
-    order = PriorityOrder()  # blank priority order
+    order = PriorityOrder(CaseBase())  # blank priority order
     order.add_order_with_subsets(case.reason, case.defeated())  # add one element
     # check if items added, and that the id is the same id
     assert any(case.defeated() is obj for obj in order.order.keys())

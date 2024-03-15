@@ -5,7 +5,7 @@ from briefcase.priority_order import PriorityOrder
 class CaseBase:
     def __init__(self, caselist=[], empty_sides=False):
         self.cases = []
-        self.order = PriorityOrder(empty_sides)
+        self.order = PriorityOrder(self, empty_sides)
         self.add_unsafe_cases(caselist)
 
     def check_incons_value(self, incons):

@@ -1,3 +1,4 @@
+from briefcase.case import Case
 from briefcase.enums import incons_enum
 
 
@@ -17,6 +18,8 @@ class AdmissibilityConstraints:
             incons_enum.NO_INVOLVEMENT: self.no_involvement_incons,
             incons_enum.HORTY: self.horty_incons,
             incons_enum.NO_CORRUPTION: self.no_corruption_incons,
+            incons_enum.MRD: self.mrd,
+            incons_enum.INTERSECTING_EDGES: self.edge_intersects,
             incons_enum.ALL: lambda *args: True,
         }
 
@@ -73,4 +76,46 @@ class AdmissibilityConstraints:
         """Minimal relevant differences admissibility constraint
          4. For all cases in the CB the new case must be minimally relevant different to
             a case with the same polarity"""
-        pass
+        current_case = Case.from_reason_defeated(new_reason, new_defeated)
+        opposing_case = current_case.polar_opposite()
+        min_case_size = 99999999999999999999
+        best_case = current_case
+        for case in self.priority_order.get_cases():
+            if case.decision == current_case.decision:
+                diffs = len(current_case.relevant_diff_from(case))
+            else:
+                diffs = len(opposing_case.relevant_diff_from(case))
+            if min_case_size >= diffs:
+                if min_case_size == diffs and best_case.decision == current_case.decision:
+                    continue
+                min_case_size = diffs
+                best_case = case
+        if best_case.decision != current_case.decision:
+            return False
+        else:
+            return True
+
+    def edge_intersects(self, new_reason, new_defeated):
+        """Intersecting Edges Admissibility Constraint
+         5. For all cases in the CB the new case must have the minimal edge intersections to
+            a case with the same polarity
+        This needs forcing to be implemented, TODO, see test case 3 for admissibility experiments"""
+        current_case = Case.from_reason_defeated(new_reason, new_defeated)
+        opposing_case = current_case.polar_opposite()
+        max_case_intersects = -1
+        best_case = current_case
+        for case in self.priority_order.get_cases():
+            if case.decision == current_case.decision:
+                diffs = self.priority_order.PD.case_intersection([case, current_case])
+            else:
+                diffs = self.priority_order.PD.case_intersection([case, opposing_case])
+            if max_case_intersects <= diffs:
+                if max_case_intersects == diffs and best_case.decision == current_case.decision:
+                    continue
+                max_case_intersects = diffs
+                best_case = case
+        print(best_case)
+        if best_case.decision != current_case.decision:
+            return False
+        else:
+            return True

@@ -31,20 +31,39 @@ class PowerDetector:
         maximum_edges_delta = (2 ** (max_d-1)) * ((2 ** max_p) - 1)
         return maximum_edges_pi, maximum_edges_delta
 
-    def count_winning_edges_case(self, case):
-        if case.reason:
-            return 2 ** (len(self.factor_list[case.decision]) - len(case.reason))
+    def supersets_count(self, decision, reason):
+        if reason:
+            return 2 ** (len(self.factor_list[decision]) - len(reason))
         else:
-            return 0 # no empty sides allowed
+            return 0
 
-    @staticmethod
-    def count_losing_edges_case(case):
-        return (2 ** (len(case.defeated()))) - 1
+    def subsets_count(self, defeated):
+        return (2 ** (len(defeated))) - 1
+
+    def case_intersection(self, cases):
+        """
+        Assuming cases have the same decision, retrieve the number of intersecting edges between them
+        """
+        reasons_set = set()
+        defeated_set = set()
+        for case in cases:
+            reasons_set.add(case.reason)
+            defeated_set.add(case.defeated())
+        reasons_union = frozenset().union(*reasons_set)
+
+        # Initialize intersection_set with the elements of the first frozen set
+        defeateds_intersection = set(list(defeated_set)[0])
+
+        # Iterate through the rest of the frozen sets and find their intersection with intersection_set
+        for fs in defeated_set:
+            defeateds_intersection = defeateds_intersection.intersection(fs)
+
+        return self.supersets_count(cases[0].decision, reasons_union) * self.subsets_count(defeateds_intersection)
 
     def case_power(self, case):
         copy_factor_list = self.factor_list
         self.add_factor_list(case)
-        edges_count = self.count_winning_edges_case(case) * self.count_losing_edges_case(case)
+        edges_count = self.supersets_count(case.decision, case.reason) * self.subsets_count(case.defeated())
         self.factor_list = copy_factor_list
         return edges_count
 

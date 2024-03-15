@@ -3,8 +3,6 @@ import pytest
 import yaml
 from briefcase.case import Case
 from briefcase.case_base import CaseBase
-from briefcase.priority_order import PriorityOrder
-from collections import Counter
 
 
 # Define a fixture to load test cases from the YAML file
@@ -22,7 +20,9 @@ def test_cases():
         "no_new",
         "no_involvement",
         "horty",
-        "no_corruption"
+        "no_corruption",
+        'mrd',
+        'intersecting_edges'
     ],
 )
 def test_is_case_admissible(test_cases, test_case_name):

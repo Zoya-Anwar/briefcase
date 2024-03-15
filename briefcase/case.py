@@ -11,6 +11,12 @@ class Case:
     the decision = pi
     reason = name="The child ate their dinner", polarity=pi
     """
+    @classmethod
+    def from_reason_defeated(cls, new_reason, new_defeated):
+        if list(new_reason)[0].polarity == decision_enum.pi:
+            return cls(new_reason, new_defeated, decision_enum.pi, new_reason)
+        else:
+            return cls(new_defeated, new_reason, decision_enum.delta, new_reason)
 
     @classmethod
     def from_dict(cls, dic):
@@ -96,6 +102,15 @@ class Case:
             defeated = self.reason - other_case.defeated()
         return reasons | defeated
 
+    def polar_opposite(self):
+        """
+        @return: Polar opposite of the current case, exactly the same factors but a decision in opposing direction
+        """
+        if self.decision == decision_enum.pi:
+            return Case(self.pi_factors, self.delta_factors, decision_enum.delta, self.delta_factors)
+        else:
+            return Case(self.pi_factors, self.delta_factors, decision_enum.pi, self.pi_factors)
+
     def __str__(self):
         """
         @return: String representation of the Case for human-readable output
@@ -122,6 +137,7 @@ class Case:
         reason_repr = [repr(factor) for factor in self.reason]
         return f"""Case(Pi Factors: {pi_factors_repr}, Delta Factors: {delta_factors_repr}, {
         decision_repr}, Reasons: {reason_repr})"""
+
 
     def __eq__(self, other):
         if isinstance(other, Case):
