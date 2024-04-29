@@ -4,8 +4,8 @@ import numpy as np
 import pytest
 import yaml
 import pandas as pd
-from cluster_factors.cluster_binary_factors import (cluster_factors_corr, cluster_factors_voting, cluster_factors_rand,
-                                                    cluster_factors_rand_un)
+from big_dataset_utility.cluster_binary_factors import (cluster_factors_corr, cluster_factors_voting, cluster_factors_rand,
+                                                        cluster_factors_rand_un)
 
 # Define a fixture to load test cases from the YAML file
 @pytest.fixture

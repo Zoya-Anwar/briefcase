@@ -70,17 +70,17 @@ class CaseBase:
         print(f"Factors for delta: {len(self.order.PD.factor_list[decision_enum.delta])}")
         return size, inconsistencies
 
-    def __str__(self):
-        """
-        @return: String representation of the CaseBase for human-readable output
-        """
-        cases_str = [str(case) for case in self.cases]
-        cases_formatted = "\n\n".join(cases_str)
-        return f"CaseBase:\n{cases_formatted}"
-
-    def __repr__(self):
-        """
-        @return: String representation of the CaseBase for recreation
-        """
-        cases_repr = [repr(case) for case in self.cases]
-        return f"CaseBase({cases_repr})"
+    # def __str__(self):
+    #     """
+    #     @return: String representation of the CaseBase for human-readable output
+    #     """
+    #     cases_str = [str(case) for case in self.cases]
+    #     cases_formatted = "\n\n".join(cases_str)
+    #     return f"CaseBase:\n{cases_formatted}"
+    #
+    # def __repr__(self):
+    #     """
+    #     @return: String representation of the CaseBase for recreation
+    #     """
+    #     cases_repr = [repr(case) for case in self.cases]
+    #     return f"CaseBase({cases_repr})"

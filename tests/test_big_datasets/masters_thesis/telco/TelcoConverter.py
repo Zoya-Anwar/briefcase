@@ -2,7 +2,7 @@ from briefcase.enums import decision_enum
 from briefcase.case_base import CaseBase
 from briefcase.case import Case
 import pandas as pd
-from cluster_factors.cluster_binary_factors import cluster_factors_voting, cluster_factors_rand_un, \
+from big_dataset_utility.cluster_binary_factors import cluster_factors_voting, cluster_factors_rand_un, \
     cluster_factors_corr, cluster_factors_rand, reduce_df
 import yaml
 import math
@@ -18,16 +18,24 @@ def get_df():
     # Load the dataset
     df = pd.read_csv('data/telco.csv')
 
+    # Replace "Yes" and "No" with 1 and 0 respectively for binary columns
+    binary_columns = ['Partner', 'Dependents', 'PhoneService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+                      'TechSupport', 'StreamingTV', 'StreamingMovies', 'PaperlessBilling', 'Churn']
+
+    print(f"{len(binary_columns)} binary columns")
+    for col in binary_columns:
+        df[col] = df[col].map({'Yes': True, 'No': False})
+        df[col] = df[col].astype(bool)
+
+    datatype_counts = df.dtypes.value_counts()
+    print(datatype_counts)
+
     # Drop numerical columns
     df = df.select_dtypes(exclude=['int64', 'float64'])
     df = df.drop('TotalCharges', axis=1)
     df = df.drop('customerID', axis=1)
 
-    # Replace "Yes" and "No" with 1 and 0 respectively for binary columns
-    binary_columns = ['Partner', 'Dependents', 'PhoneService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
-                      'TechSupport', 'StreamingTV', 'StreamingMovies', 'PaperlessBilling', 'Churn']
-    for col in binary_columns:
-        df[col] = df[col].map({'Yes': True, 'No': False})
+    print("2 numerical columns - dropped")
 
     df_encoded = pd.get_dummies(df)
 

@@ -17,15 +17,18 @@ def test_cases():
     "test_case_name",
     [
         "all",
-        "no_new",
+        "no_inconsistency",
+        "no_inconsistency_true",
+        "no_changed_order",
         "no_involvement",
-        "horty",
+        "no_new",
         "no_corruption",
         'mrd',
         'intersecting_edges'
     ],
 )
 def test_is_case_admissible(test_cases, test_case_name):
+    print(test_cases.keys())
     cs = test_cases[test_case_name]['cases']
     ads = test_cases[test_case_name]['adds']
     fs = test_cases[test_case_name]['fails']
@@ -47,3 +50,26 @@ def test_is_case_admissible(test_cases, test_case_name):
             fails_results.append(case)
 
     assert fails == fails_results
+
+@pytest.mark.parametrize(
+    "test_case_name",
+    [
+        "all"
+    ],
+)
+def test_is_case_admissible_not(test_cases, test_case_name):
+    cs = test_cases[test_case_name]['cases']
+    ads = test_cases[test_case_name]['adds']
+    fs = test_cases[test_case_name]['fails']
+
+    cases = [Case.from_dict(c) for c in cs]
+    adds = [Case.from_dict(c) for c in ads]
+
+
+    cb1 = CaseBase(cases)
+    fails_results = []
+
+    for case in adds:
+        with pytest.raises(KeyError):
+            if not cb1.add_case(case, None):
+                fails_results.append(case)

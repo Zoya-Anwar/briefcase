@@ -94,7 +94,6 @@ class PriorityOrder:
     #                 weaker_defeats.add(candidate)
     #
     #     return weaker_defeats
-
     def add_order_with_subsets(self, reason, defeated):
         """
         @param reason: a frozenset of factors

@@ -98,3 +98,18 @@ def test_get_incons_pairs_with_case(test_cases, test_case_name):
     expected = cb1.order.get_incons_pairs_with_case(inconsistent_case.reason, inconsistent_case.defeated())
     assert Counter(expected) == Counter(answer)
 
+def test_priority_order_str_order():
+    # Create a PriorityOrder instance
+    priority_order = PriorityOrder(cb=None)
+
+    # Add some order entries for testing
+    priority_order.add_order_with_subsets(frozenset({"factor1"}), frozenset({"factor2"}))
+    priority_order.add_order_with_subsets(frozenset({"factor3"}), frozenset({"factor4", "factor5"}))
+
+    # Expected string representation
+
+    expected_str = "\nPriority Order:\nReason: frozenset({'factor2'}), Defeated: {frozenset({'factor1'})}\nReason: frozenset({'factor5', 'factor4'}), Defeated: {frozenset({'factor3'})}"
+    expected_str_2 = "\nPriority Order:\nReason: frozenset({'factor2'}), Defeated: {frozenset({'factor1'})}\nReason: frozenset({'factor4', 'factor5'}), Defeated: {frozenset({'factor3'})}"
+    actual = priority_order.str_order()
+    # Check the string representation returned by str_order
+    assert actual == expected_str or actual == expected_str_2

@@ -1,11 +1,9 @@
 - decision: delta
   delta: &id001
   - cap-surface_f
-  - cap-color_n
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -15,7 +13,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
   - bruises_f
   - gill-attachment_f
   - gill-color_h
@@ -25,13 +22,9 @@
   reason: *id001
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   pi: &id002
-  - cap-shape_f
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -50,13 +43,9 @@
   reason: *id002
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   pi: &id003
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -75,12 +64,10 @@
   reason: *id003
 - decision: delta
   delta: &id004
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -89,24 +76,17 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id004
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   pi: &id005
-  - cap-shape_f
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -125,13 +105,9 @@
   reason: *id005
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   pi: &id006
-  - cap-surface_y
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -150,11 +126,8 @@
   reason: *id006
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_g
   - bruises_t
   - gill-size_b
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
   - stalk-color-above-ring_w
@@ -162,12 +135,10 @@
   - ring-type_p
   - population_s
   pi: &id007
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -175,19 +146,15 @@
   reason: *id007
 - decision: pi
   delta:
-  - cap-shape_x
   - gill-size_b
   - population_y
   pi: &id008
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -201,12 +168,10 @@
 - decision: delta
   delta: &id009
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -215,22 +180,18 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id009
 - decision: delta
   delta: &id010
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -240,11 +201,8 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id010
@@ -254,8 +212,6 @@
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -263,11 +219,8 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -288,14 +241,10 @@
   - ring-type_p
   - habitat_m
   pi: &id012
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - veil-color_w
-  - spore-print-color_r
   - population_v
   reason: *id012
 - decision: delta
@@ -315,22 +264,18 @@
   - population_n
   - habitat_m
   pi:
-  - cap-surface_y
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id013
 - decision: delta
   delta: &id014
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_s
@@ -340,8 +285,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -351,7 +294,6 @@
 - decision: delta
   delta: &id015
   - cap-surface_f
-  - cap-color_n
   - odor_n
   - gill-color_k
   - stalk-root_e
@@ -362,12 +304,10 @@
   - ring-type_p
   - spore-print-color_k
   pi:
-  - cap-shape_f
   - bruises_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - population_v
@@ -375,23 +315,18 @@
   reason: *id015
 - decision: delta
   delta: &id016
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -415,24 +350,19 @@
   - population_n
   - habitat_g
   pi:
-  - cap-surface_y
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id017
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   pi: &id018
   - cap-shape_k
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -450,7 +380,6 @@
   reason: *id018
 - decision: delta
   delta: &id019
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - odor_l
@@ -465,33 +394,27 @@
   - population_s
   - habitat_m
   pi:
-  - cap-surface_s
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id019
 - decision: delta
   delta: &id020
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -500,14 +423,12 @@
   reason: *id020
 - decision: delta
   delta: &id021
-  - cap-shape_x
   - cap-surface_f
   - cap-color_w
   - bruises_t
   - odor_a
   - gill-spacing_w
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -518,7 +439,6 @@
   pi:
   - gill-attachment_f
   - gill-size_n
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
@@ -529,34 +449,26 @@
   - odor_l
   - gill-spacing_w
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
-  - spore-print-color_u
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - cap-color_y
   - gill-attachment_f
   - gill-size_n
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id022
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-below-ring_w
   pi: &id023
   - cap-shape_k
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -575,14 +487,11 @@
   reason: *id023
 - decision: delta
   delta: &id024
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
@@ -592,7 +501,6 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
@@ -600,11 +508,8 @@
   reason: *id024
 - decision: pi
   delta:
-  - cap-shape_x
   - bruises_t
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -612,12 +517,9 @@
   - ring-type_p
   - habitat_g
   pi: &id025
-  - cap-surface_s
-  - cap-color_b
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -625,13 +527,10 @@
   reason: *id025
 - decision: delta
   delta: &id026
-  - cap-shape_x
-  - cap-color_n
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_f
@@ -641,7 +540,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -650,13 +548,9 @@
   reason: *id026
 - decision: delta
   delta: &id027
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -665,10 +559,8 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
@@ -679,7 +571,6 @@
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -687,12 +578,8 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -700,13 +587,10 @@
   reason: *id028
 - decision: delta
   delta: &id029
-  - cap-shape_x
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -715,19 +599,15 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id029
 - decision: pi
   delta:
-  - cap-color_n
   - bruises_t
-  - gill-color_p
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -738,27 +618,20 @@
   - population_s
   - habitat_g
   pi: &id030
-  - cap-shape_f
-  - cap-surface_y
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id030
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id031
-  - cap-surface_y
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -777,16 +650,12 @@
   delta:
   - gill-size_b
   pi: &id032
-  - cap-shape_f
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -800,12 +669,9 @@
   reason: *id032
 - decision: delta
   delta: &id033
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -815,23 +681,16 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id033
 - decision: delta
   delta: &id034
-  - cap-shape_x
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -840,10 +699,8 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
@@ -851,12 +708,10 @@
 - decision: delta
   delta: &id035
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -865,10 +720,8 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
@@ -879,15 +732,12 @@
   - gill-size_b
   - habitat_g
   pi: &id036
-  - cap-shape_f
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -900,13 +750,11 @@
   reason: *id036
 - decision: delta
   delta: &id037
-  - cap-shape_x
   - cap-surface_f
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -914,10 +762,8 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -925,19 +771,14 @@
   reason: *id037
 - decision: pi
   delta:
-  - cap-shape_x
   - gill-size_b
-  - gill-color_p
   - habitat_g
   pi: &id038
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -950,13 +791,10 @@
   reason: *id038
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-below-ring_w
   pi: &id039
   - cap-shape_k
-  - cap-surface_s
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -975,14 +813,11 @@
   reason: *id039
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id040
   - cap-shape_k
-  - cap-surface_s
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -1000,13 +835,9 @@
   reason: *id040
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
   pi: &id041
-  - cap-surface_y
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -1025,7 +856,6 @@
   reason: *id041
 - decision: delta
   delta: &id042
-  - cap-shape_x
   - bruises_t
   - odor_a
   - gill-size_b
@@ -1040,22 +870,17 @@
   - population_s
   - habitat_m
   pi:
-  - cap-surface_s
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id042
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   pi: &id043
   - cap-shape_k
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -1075,12 +900,10 @@
   reason: *id043
 - decision: delta
   delta: &id044
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -1090,29 +913,22 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id044
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   - habitat_d
   pi: &id045
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -1125,7 +941,6 @@
   reason: *id045
 - decision: delta
   delta: &id046
-  - cap-shape_x
   - cap-surface_f
   - cap-color_w
   - odor_n
@@ -1141,7 +956,6 @@
   - bruises_f
   - gill-attachment_f
   - gill-color_g
-  - stalk-shape_e
   - stalk-root_?
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
@@ -1150,7 +964,6 @@
   reason: *id046
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - gill-color_k
@@ -1162,12 +975,10 @@
   - ring-type_p
   - spore-print-color_k
   pi: &id047
-  - cap-surface_y
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - population_v
@@ -1175,23 +986,18 @@
   reason: *id047
 - decision: delta
   delta: &id048
-  - cap-shape_x
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -1200,20 +1006,15 @@
   reason: *id048
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
   - population_y
   - habitat_d
   pi: &id049
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -1225,12 +1026,10 @@
   reason: *id049
 - decision: delta
   delta: &id050
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -1240,24 +1039,17 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id050
 - decision: pi
   delta:
-  - cap-shape_x
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - habitat_d
   pi: &id051
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -1276,18 +1068,13 @@
 - decision: pi
   delta:
   - gill-size_b
-  - gill-color_p
   - habitat_d
   pi: &id052
-  - cap-shape_f
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -1303,16 +1090,12 @@
   - gill-size_b
   - habitat_d
   pi: &id053
-  - cap-shape_f
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -1325,12 +1108,8 @@
   reason: *id053
 - decision: pi
   delta:
-  - cap-shape_x
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   pi: &id054
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -1353,36 +1132,27 @@
   - bruises_t
   - odor_a
   - gill-size_b
-  - gill-color_p
   - stalk-root_r
   - stalk-surface-above-ring_s
-  - stalk-surface-below-ring_y
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
   - spore-print-color_k
   - population_s
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - habitat_p
   reason: *id055
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id056
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -1400,14 +1170,10 @@
   reason: *id056
 - decision: delta
   delta: &id057
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
@@ -1416,7 +1182,6 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -1427,7 +1192,6 @@
   delta: &id058
   - cap-shape_b
   - cap-surface_f
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
@@ -1441,7 +1205,6 @@
   - bruises_f
   - gill-attachment_f
   - gill-color_g
-  - stalk-shape_e
   - stalk-root_?
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
@@ -1450,9 +1213,7 @@
   reason: *id058
 - decision: pi
   delta:
-  - cap-shape_x
   - gill-spacing_w
-  - gill-color_p
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -1462,26 +1223,19 @@
   - population_s
   - habitat_d
   pi: &id059
-  - cap-surface_s
-  - cap-color_p
   - bruises_f
   - odor_c
   - gill-attachment_f
   - gill-size_n
-  - stalk-shape_e
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id059
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-above-ring_w
   pi: &id060
   - cap-shape_k
-  - cap-surface_s
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -1500,12 +1254,8 @@
   reason: *id060
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-color-above-ring_w
   pi: &id061
-  - cap-shape_f
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -1526,12 +1276,10 @@
 - decision: delta
   delta: &id062
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -1540,23 +1288,18 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id062
 - decision: delta
   delta: &id063
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -1564,10 +1307,8 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -1575,45 +1316,36 @@
   reason: *id063
 - decision: delta
   delta: &id064
-  - cap-color_n
   - bruises_t
   - odor_l
   - gill-size_b
   - gill-color_w
   - stalk-root_r
   - stalk-surface-above-ring_s
-  - stalk-surface-below-ring_y
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
   - spore-print-color_k
   - population_y
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - habitat_p
   reason: *id064
 - decision: pi
   delta:
-  - cap-shape_x
   - gill-size_b
   - population_y
   - habitat_d
   pi: &id065
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -1625,9 +1357,7 @@
   reason: *id065
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   pi: &id066
   - bruises_f
@@ -1635,8 +1365,6 @@
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -1652,11 +1380,9 @@
   delta: &id067
   - cap-shape_b
   - cap-surface_f
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - gill-color_p
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -1668,7 +1394,6 @@
   pi:
   - bruises_f
   - gill-attachment_f
-  - stalk-shape_e
   - stalk-root_?
   - veil-color_w
   - spore-print-color_w
@@ -1678,16 +1403,12 @@
   - gill-size_b
   - habitat_d
   pi: &id068
-  - cap-shape_f
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -1700,14 +1421,11 @@
   reason: *id068
 - decision: delta
   delta: &id069
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -1719,19 +1437,14 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id069
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id070
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -1750,9 +1463,7 @@
   reason: *id070
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
-  - gill-color_p
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -1762,14 +1473,11 @@
   - population_s
   - habitat_d
   pi: &id071
-  - cap-color_p
   - bruises_f
   - odor_c
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id071
@@ -1778,16 +1486,12 @@
   - gill-size_b
   - habitat_d
   pi: &id072
-  - cap-shape_f
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -1800,9 +1504,7 @@
   reason: *id072
 - decision: delta
   delta: &id073
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
@@ -1817,7 +1519,6 @@
   - bruises_f
   - gill-attachment_f
   - gill-color_g
-  - stalk-shape_e
   - stalk-root_?
   - stalk-surface-above-ring_k
   - veil-color_w
@@ -1825,7 +1526,6 @@
   reason: *id073
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
   - gill-size_b
   - population_y
@@ -1836,8 +1536,6 @@
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -1850,13 +1548,9 @@
   reason: *id074
 - decision: pi
   delta:
-  - cap-shape_x
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   pi: &id075
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -1875,14 +1569,10 @@
   reason: *id075
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   pi: &id076
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -1905,7 +1595,6 @@
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
@@ -1914,26 +1603,19 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id077
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id078
-  - cap-shape_f
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -1951,18 +1633,13 @@
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
-  - gill-color_p
   - population_y
   pi: &id079
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -1976,19 +1653,15 @@
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   - population_y
   - habitat_g
   pi: &id080
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -2000,12 +1673,10 @@
   reason: *id080
 - decision: delta
   delta: &id081
-  - cap-color_n
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -2015,8 +1686,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -2025,15 +1694,12 @@
   reason: *id081
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id082
   - cap-shape_k
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -2050,24 +1716,18 @@
   reason: *id082
 - decision: delta
   delta: &id083
-  - cap-shape_x
-  - cap-color_n
   - odor_n
   - gill-attachment_a
   - gill-size_b
-  - gill-color_y
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_o
   - stalk-color-below-ring_o
   - veil-color_o
   - ring-type_p
-  - spore-print-color_y
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-root_?
   - ring-number_o
   - population_v
@@ -2075,14 +1735,10 @@
   reason: *id083
 - decision: delta
   delta: &id084
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
@@ -2091,7 +1747,6 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -2100,23 +1755,19 @@
   reason: *id084
 - decision: delta
   delta: &id085
-  - cap-shape_x
   - cap-surface_f
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -2125,13 +1776,9 @@
   reason: *id085
 - decision: delta
   delta: &id086
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
@@ -2139,10 +1786,8 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
@@ -2150,8 +1795,6 @@
   reason: *id086
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
   - gill-color_k
   - stalk-root_e
@@ -2164,12 +1807,10 @@
   - population_s
   - habitat_g
   pi: &id087
-  - cap-surface_y
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id087
@@ -2188,26 +1829,18 @@
   - ring-type_p
   - habitat_g
   pi: &id088
-  - cap-surface_s
-  - cap-color_b
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - veil-color_w
-  - spore-print-color_r
   - population_v
   reason: *id088
 - decision: delta
   delta: &id089
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -2219,19 +1852,14 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id089
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
   pi: &id090
-  - cap-shape_f
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -2250,24 +1878,18 @@
   reason: *id090
 - decision: delta
   delta: &id091
-  - cap-color_n
   - odor_n
   - gill-attachment_a
   - gill-size_b
-  - gill-color_y
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_o
   - stalk-color-below-ring_o
   - veil-color_o
   - ring-type_p
-  - spore-print-color_y
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-root_?
   - ring-number_o
   - population_v
@@ -2275,11 +1897,9 @@
   reason: *id091
 - decision: delta
   delta: &id092
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - gill-color_p
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
@@ -2289,10 +1909,8 @@
   - habitat_g
   pi:
   - cap-shape_k
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
-  - stalk-shape_e
   - stalk-root_?
   - stalk-surface-above-ring_k
   - veil-color_w
@@ -2305,7 +1923,6 @@
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -2315,11 +1932,8 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id093
@@ -2329,7 +1943,6 @@
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
@@ -2338,24 +1951,16 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id094
 - decision: pi
   delta:
-  - cap-shape_x
-  - stalk-shape_t
   - habitat_d
   pi: &id095
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -2375,15 +1980,11 @@
   reason: *id095
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id096
-  - cap-surface_y
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -2401,17 +2002,13 @@
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   pi: &id097
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -2425,24 +2022,19 @@
   reason: *id097
 - decision: delta
   delta: &id098
-  - cap-shape_x
-  - cap-color_r
   - odor_n
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
-  - ring-type_f
   - population_y
   - habitat_d
   pi:
-  - cap-surface_y
   - bruises_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
   - gill-color_h
-  - stalk-shape_e
   - stalk-root_?
   - veil-color_w
   - ring-number_o
@@ -2450,14 +2042,10 @@
   reason: *id098
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id099
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -2475,13 +2063,10 @@
   reason: *id099
 - decision: delta
   delta: &id100
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -2500,14 +2085,12 @@
   reason: *id100
 - decision: delta
   delta: &id101
-  - cap-shape_x
   - cap-surface_f
   - cap-color_w
   - bruises_t
   - odor_l
   - gill-spacing_w
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -2518,21 +2101,16 @@
   pi:
   - gill-attachment_f
   - gill-size_n
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id101
 - decision: delta
   delta: &id102
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -2543,7 +2121,6 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
@@ -2554,7 +2131,6 @@
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -2563,12 +2139,8 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -2590,24 +2162,18 @@
   - population_n
   - habitat_m
   pi:
-  - cap-surface_s
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id104
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
   pi: &id105
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -2625,12 +2191,8 @@
   reason: *id105
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   pi: &id106
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -2654,7 +2216,6 @@
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
@@ -2662,12 +2223,8 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
@@ -2675,9 +2232,7 @@
   reason: *id107
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   - habitat_g
   pi: &id108
@@ -2686,8 +2241,6 @@
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -2706,39 +2259,29 @@
   - odor_a
   - gill-spacing_w
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
-  - spore-print-color_u
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-size_n
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id109
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_g
   - gill-size_b
-  - gill-color_p
   - population_y
   - habitat_d
   pi: &id110
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -2750,14 +2293,10 @@
   reason: *id110
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
   pi: &id111
-  - cap-surface_y
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -2775,12 +2314,8 @@
   reason: *id111
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_g
   - bruises_t
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_f
   - stalk-color-above-ring_w
@@ -2788,11 +2323,9 @@
   - ring-type_p
   - population_s
   pi: &id112
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -2800,8 +2333,6 @@
   reason: *id112
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
   - gill-color_w
   - stalk-root_e
@@ -2812,12 +2343,10 @@
   - ring-type_p
   - spore-print-color_n
   pi: &id113
-  - cap-surface_s
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - population_v
@@ -2825,9 +2354,7 @@
   reason: *id113
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   - population_y
   - habitat_d
@@ -2837,8 +2364,6 @@
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -2850,11 +2375,9 @@
   reason: *id114
 - decision: pi
   delta:
-  - cap-shape_x
   - bruises_t
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -2862,12 +2385,9 @@
   - ring-type_p
   - habitat_g
   pi: &id115
-  - cap-surface_s
-  - cap-color_b
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -2875,9 +2395,7 @@
   reason: *id115
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - gill-color_n
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -2892,8 +2410,6 @@
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
@@ -2904,7 +2420,6 @@
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -2913,25 +2428,18 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id117
 - decision: delta
   delta: &id118
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -2940,22 +2448,18 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id118
 - decision: delta
   delta: &id119
-  - cap-color_n
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -2965,8 +2469,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -2975,10 +2477,7 @@
   reason: *id119
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
-  - gill-color_p
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -2989,30 +2488,24 @@
   - population_s
   - habitat_g
   pi: &id120
-  - cap-surface_y
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id120
 - decision: pi
   delta:
-  - cap-shape_x
   - gill-size_b
   - population_y
   pi: &id121
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -3025,8 +2518,6 @@
   reason: *id121
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -3034,7 +2525,6 @@
   - habitat_d
   pi: &id122
   - cap-shape_k
-  - cap-surface_y
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -3050,14 +2540,11 @@
   reason: *id122
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id123
   - cap-shape_k
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -3075,7 +2562,6 @@
   reason: *id123
 - decision: delta
   delta: &id124
-  - cap-shape_x
   - bruises_t
   - odor_l
   - gill-size_b
@@ -3089,34 +2575,28 @@
   - population_n
   - habitat_m
   pi:
-  - cap-surface_y
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id124
 - decision: delta
   delta: &id125
-  - cap-shape_x
   - cap-surface_f
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -3125,7 +2605,6 @@
   reason: *id125
 - decision: delta
   delta: &id126
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - odor_l
@@ -3141,22 +2620,16 @@
   - population_s
   - habitat_m
   pi:
-  - cap-surface_s
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id126
 - decision: pi
   delta:
-  - cap-shape_x
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-above-ring_w
   pi: &id127
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -3176,18 +2649,14 @@
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   - habitat_d
   pi: &id128
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -3215,22 +2684,17 @@
   - population_n
   - habitat_g
   pi:
-  - cap-surface_s
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id129
 - decision: delta
   delta: &id130
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -3239,24 +2703,17 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id130
 - decision: delta
   delta: &id131
-  - cap-shape_x
-  - cap-color_n
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -3266,7 +2723,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -3275,7 +2731,6 @@
   reason: *id131
 - decision: delta
   delta: &id132
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - odor_l
@@ -3291,22 +2746,17 @@
   - population_s
   - habitat_g
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id132
 - decision: delta
   delta: &id133
-  - cap-shape_x
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -3316,7 +2766,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -3325,12 +2774,10 @@
   reason: *id133
 - decision: delta
   delta: &id134
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -3340,8 +2787,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -3350,23 +2795,18 @@
   reason: *id134
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
   pi: &id135
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -3375,15 +2815,11 @@
   reason: *id135
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   pi: &id136
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -3404,7 +2840,6 @@
   - bruises_t
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -3412,12 +2847,9 @@
   - ring-type_p
   - population_s
   pi: &id137
-  - cap-shape_f
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -3425,13 +2857,10 @@
   reason: *id137
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   pi: &id138
   - cap-shape_k
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -3450,14 +2879,10 @@
   reason: *id138
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id139
-  - cap-surface_y
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -3476,18 +2901,14 @@
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   - population_y
   pi: &id140
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -3504,19 +2925,15 @@
   - bruises_t
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
   pi: &id141
-  - cap-shape_f
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -3525,13 +2942,10 @@
   reason: *id141
 - decision: delta
   delta: &id142
-  - cap-shape_x
   - cap-surface_f
   - bruises_t
   - odor_l
   - gill-spacing_w
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -3543,19 +2957,16 @@
   - cap-color_y
   - gill-attachment_f
   - gill-size_n
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id142
 - decision: delta
   delta: &id143
-  - cap-color_n
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -3565,8 +2976,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -3575,13 +2984,9 @@
   reason: *id143
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - habitat_d
   pi: &id144
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -3604,15 +3009,12 @@
   - gill-size_b
   - population_y
   pi: &id145
-  - cap-shape_f
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -3625,10 +3027,7 @@
   reason: *id145
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
-  - gill-color_p
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -3638,25 +3037,19 @@
   - spore-print-color_n
   - habitat_g
   pi: &id146
-  - cap-surface_y
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id146
 - decision: delta
   delta: &id147
-  - cap-shape_x
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -3666,7 +3059,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -3675,7 +3067,6 @@
   reason: *id147
 - decision: delta
   delta: &id148
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - odor_l
@@ -3691,23 +3082,18 @@
   - population_s
   - habitat_g
   pi:
-  - cap-surface_s
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id148
 - decision: delta
   delta: &id149
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -3719,19 +3105,15 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id149
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-above-ring_w
   pi: &id150
   - cap-shape_k
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -3750,12 +3132,9 @@
   reason: *id150
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   pi: &id151
   - cap-shape_k
-  - cap-surface_s
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -3780,8 +3159,6 @@
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -3791,7 +3168,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-shape_f
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -3800,23 +3176,17 @@
   reason: *id152
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_g
   - bruises_t
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
   pi: &id153
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -3825,14 +3195,10 @@
   reason: *id153
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   pi: &id154
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -3851,7 +3217,6 @@
 - decision: delta
   delta: &id155
   - cap-surface_f
-  - cap-color_c
   - odor_n
   - gill-spacing_w
   - gill-color_w
@@ -3863,8 +3228,6 @@
   - bruises_f
   - gill-attachment_f
   - gill-size_n
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-color-below-ring_n
   - veil-color_w
   - ring-number_o
@@ -3878,8 +3241,6 @@
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -3888,19 +3249,14 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id156
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - gill-color_w
@@ -3914,20 +3270,16 @@
   - population_s
   - habitat_g
   pi: &id157
-  - cap-surface_s
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id157
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   - habitat_g
   pi: &id158
@@ -3936,8 +3288,6 @@
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -3955,15 +3305,12 @@
   - population_y
   - habitat_g
   pi: &id159
-  - cap-shape_f
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -3976,18 +3323,14 @@
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   - habitat_g
   pi: &id160
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -4000,14 +3343,11 @@
   reason: *id160
 - decision: delta
   delta: &id161
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
@@ -4017,7 +3357,6 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -4025,13 +3364,11 @@
   reason: *id161
 - decision: delta
   delta: &id162
-  - cap-shape_x
   - cap-surface_f
   - cap-color_w
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -4050,19 +3387,15 @@
   reason: *id162
 - decision: pi
   delta:
-  - cap-shape_x
   - gill-size_b
   - habitat_g
   pi: &id163
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -4089,24 +3422,18 @@
   - population_s
   - habitat_m
   pi:
-  - cap-surface_y
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id164
 - decision: pi
   delta:
-  - cap-shape_x
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - habitat_d
   pi: &id165
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -4141,7 +3468,6 @@
   - bruises_f
   - gill-attachment_f
   - gill-color_g
-  - stalk-shape_e
   - stalk-root_?
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
@@ -4150,18 +3476,12 @@
   reason: *id166
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
-  - gill-color_p
   pi: &id167
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -4175,7 +3495,6 @@
   reason: *id167
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
   - gill-size_b
   - population_y
@@ -4186,8 +3505,6 @@
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -4203,16 +3520,12 @@
   - gill-size_b
   - habitat_g
   pi: &id169
-  - cap-shape_f
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -4225,9 +3538,7 @@
   reason: *id169
 - decision: pi
   delta:
-  - cap-shape_x
   - gill-spacing_w
-  - gill-color_p
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -4236,26 +3547,19 @@
   - spore-print-color_n
   - habitat_d
   pi: &id170
-  - cap-surface_s
-  - cap-color_p
   - bruises_f
   - odor_c
   - gill-attachment_f
   - gill-size_n
-  - stalk-shape_e
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id170
 - decision: delta
   delta: &id171
-  - cap-shape_x
-  - cap-color_n
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -4265,7 +3569,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - gill-color_h
@@ -4276,12 +3579,9 @@
 - decision: delta
   delta: &id172
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -4290,23 +3590,19 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id172
 - decision: delta
   delta: &id173
-  - cap-shape_x
   - cap-surface_f
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
@@ -4315,22 +3611,18 @@
   - population_y
   - habitat_d
   pi:
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id173
 - decision: delta
   delta: &id174
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -4339,23 +3631,16 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id174
 - decision: pi
   delta:
-  - cap-shape_x
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   pi: &id175
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -4375,12 +3660,9 @@
   reason: *id175
 - decision: delta
   delta: &id176
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -4389,25 +3671,19 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id176
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
   pi: &id177
   - cap-shape_k
-  - cap-surface_s
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -4425,14 +3701,11 @@
   reason: *id177
 - decision: delta
   delta: &id178
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -4444,17 +3717,14 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id178
 - decision: delta
   delta: &id179
-  - cap-color_n
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_s
@@ -4464,8 +3734,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - gill-color_h
@@ -4490,24 +3758,18 @@
   - population_s
   - habitat_m
   pi:
-  - cap-surface_s
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id180
 - decision: delta
   delta: &id181
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -4519,21 +3781,16 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id181
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id182
-  - cap-surface_s
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -4551,12 +3808,9 @@
 - decision: delta
   delta: &id183
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -4566,21 +3820,16 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id183
 - decision: delta
   delta: &id184
-  - cap-shape_x
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -4590,48 +3839,32 @@
   - population_y
   - habitat_d
   pi:
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id184
 - decision: pi
   delta:
-  - cap-shape_x
   - gill-size_b
-  - gill-color_y
   - stalk-root_c
-  - stalk-surface-below-ring_y
   - population_c
   - habitat_d
   pi: &id185
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
-  - odor_m
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-surface-above-ring_k
-  - stalk-color-above-ring_c
-  - stalk-color-below-ring_c
   - veil-color_w
-  - ring-number_n
-  - ring-type_n
   - spore-print-color_w
   reason: *id185
 - decision: delta
   delta: &id186
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -4639,10 +3872,8 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -4653,8 +3884,6 @@
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -4662,12 +3891,8 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -4675,14 +3900,11 @@
   reason: *id187
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id188
   - cap-shape_k
-  - cap-surface_s
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -4700,13 +3922,10 @@
   reason: *id188
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - habitat_d
   pi: &id189
   - cap-shape_k
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -4725,9 +3944,7 @@
   reason: *id189
 - decision: delta
   delta: &id190
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_c
   - odor_n
   - gill-spacing_w
   - gill-color_w
@@ -4738,8 +3955,6 @@
   - bruises_f
   - gill-attachment_f
   - gill-size_n
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-color-below-ring_n
   - veil-color_w
   - ring-number_o
@@ -4750,12 +3965,10 @@
   reason: *id190
 - decision: delta
   delta: &id191
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -4764,24 +3977,17 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id191
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - habitat_d
   pi: &id192
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -4800,12 +4006,9 @@
   reason: *id192
 - decision: delta
   delta: &id193
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -4814,11 +4017,8 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -4826,12 +4026,9 @@
 - decision: delta
   delta: &id194
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
@@ -4839,10 +4036,8 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -4850,7 +4045,6 @@
   reason: *id194
 - decision: delta
   delta: &id195
-  - cap-shape_x
   - bruises_t
   - odor_n
   - gill-size_b
@@ -4863,11 +4057,8 @@
   - population_c
   - habitat_w
   pi:
-  - cap-surface_y
-  - cap-color_p
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-root_?
   - veil-color_w
   - ring-type_e
@@ -4876,23 +4067,18 @@
 - decision: delta
   delta: &id196
   - cap-shape_b
-  - cap-color_n
   - odor_n
   - gill-attachment_a
   - gill-size_b
-  - gill-color_o
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_o
   - stalk-color-below-ring_o
   - veil-color_o
   - ring-type_p
-  - spore-print-color_b
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-root_?
   - ring-number_o
   - population_v
@@ -4904,16 +4090,12 @@
   - population_y
   - habitat_d
   pi: &id197
-  - cap-shape_f
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -4929,7 +4111,6 @@
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -4938,12 +4119,8 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
@@ -4965,47 +4142,38 @@
   - population_s
   - habitat_g
   pi:
-  - cap-surface_s
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id199
 - decision: delta
   delta: &id200
-  - cap-shape_x
   - cap-surface_f
   - bruises_t
   - odor_a
   - gill-spacing_w
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
-  - spore-print-color_u
   - habitat_d
   pi:
   - cap-color_y
   - gill-attachment_f
   - gill-size_n
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id200
 - decision: delta
   delta: &id201
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -5014,23 +4182,16 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id201
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-color-below-ring_w
   pi: &id202
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -5054,19 +4215,15 @@
   - bruises_t
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_f
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
   pi: &id203
-  - cap-shape_f
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -5075,12 +4232,10 @@
   reason: *id203
 - decision: delta
   delta: &id204
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
@@ -5088,11 +4243,8 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -5100,14 +4252,11 @@
   reason: *id204
 - decision: delta
   delta: &id205
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_s
@@ -5136,13 +4285,10 @@
   - ring-type_p
   - spore-print-color_n
   pi: &id206
-  - cap-shape_f
-  - cap-surface_s
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - population_v
@@ -5166,21 +4312,15 @@
   - population_n
   - habitat_m
   pi:
-  - cap-surface_s
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id207
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   pi: &id208
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -5200,14 +4340,11 @@
   reason: *id208
 - decision: delta
   delta: &id209
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -5217,7 +4354,6 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -5225,19 +4361,14 @@
   reason: *id209
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
   - habitat_d
   pi: &id210
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -5250,20 +4381,15 @@
   reason: *id210
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
   - population_y
   - habitat_g
   pi: &id211
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -5276,12 +4402,10 @@
 - decision: delta
   delta: &id212
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -5290,24 +4414,19 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id212
 - decision: delta
   delta: &id213
-  - cap-color_n
   - bruises_t
   - odor_a
   - gill-size_b
-  - gill-color_p
   - stalk-root_r
   - stalk-surface-above-ring_s
-  - stalk-surface-below-ring_y
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
@@ -5315,22 +4434,16 @@
   - population_y
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id213
 - decision: delta
   delta: &id214
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -5340,8 +4453,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -5350,20 +4461,15 @@
   reason: *id214
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
   - population_y
   - habitat_d
   pi: &id215
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -5375,12 +4481,10 @@
   reason: *id215
 - decision: delta
   delta: &id216
-  - cap-color_n
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -5390,8 +4494,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -5400,7 +4502,6 @@
   reason: *id216
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -5408,8 +4509,6 @@
   - habitat_d
   pi: &id217
   - cap-shape_k
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -5425,14 +4524,10 @@
   reason: *id217
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   pi: &id218
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -5451,18 +4546,13 @@
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
-  - gill-color_p
   - habitat_g
   pi: &id219
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -5491,16 +4581,13 @@
   - population_n
   - habitat_g
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id220
 - decision: delta
   delta: &id221
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
@@ -5512,12 +4599,8 @@
   - ring-number_t
   - ring-type_p
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - veil-color_w
   - spore-print-color_w
   - population_v
@@ -5525,20 +4608,15 @@
   reason: *id221
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_g
   - gill-size_b
   - population_y
   - habitat_d
   pi: &id222
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -5555,7 +4633,6 @@
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -5564,24 +4641,18 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id223
 - decision: delta
   delta: &id224
-  - cap-shape_x
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
@@ -5589,10 +4660,8 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
@@ -5601,7 +4670,6 @@
 - decision: delta
   delta: &id225
   - cap-surface_f
-  - cap-color_n
   - odor_n
   - gill-color_n
   - stalk-root_e
@@ -5612,12 +4680,10 @@
   - ring-type_p
   - spore-print-color_n
   pi:
-  - cap-shape_f
   - bruises_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - population_v
@@ -5630,7 +4696,6 @@
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -5640,23 +4705,18 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id226
 - decision: delta
   delta: &id227
   - cap-surface_f
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_f
@@ -5666,7 +4726,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-shape_f
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -5675,24 +4734,18 @@
   reason: *id227
 - decision: delta
   delta: &id228
-  - cap-color_n
   - odor_n
   - gill-attachment_a
   - gill-size_b
-  - gill-color_o
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_o
   - stalk-color-below-ring_o
   - veil-color_n
   - ring-type_p
-  - spore-print-color_b
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-root_?
   - ring-number_o
   - population_v
@@ -5700,12 +4753,8 @@
   reason: *id228
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   pi: &id229
-  - cap-shape_f
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -5725,15 +4774,11 @@
   reason: *id229
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id230
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -5750,27 +4795,17 @@
   reason: *id230
 - decision: pi
   delta:
-  - cap-color_n
   - gill-attachment_a
   - gill-size_b
   - gill-color_w
   - stalk-root_c
-  - stalk-surface-below-ring_y
   - population_c
   - habitat_d
   pi: &id231
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
-  - odor_m
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-surface-above-ring_k
-  - stalk-color-above-ring_c
-  - stalk-color-below-ring_c
   - veil-color_w
-  - ring-number_n
-  - ring-type_n
   - spore-print-color_w
   reason: *id231
 - decision: delta
@@ -5781,7 +4816,6 @@
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - gill-color_p
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
@@ -5792,7 +4826,6 @@
   pi:
   - bruises_f
   - gill-attachment_f
-  - stalk-shape_e
   - stalk-root_?
   - stalk-surface-above-ring_k
   - veil-color_w
@@ -5801,12 +4834,10 @@
 - decision: delta
   delta: &id233
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_g
@@ -5814,10 +4845,8 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
@@ -5826,12 +4855,10 @@
 - decision: delta
   delta: &id234
   - cap-surface_f
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_s
@@ -5841,7 +4868,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -5850,14 +4876,12 @@
   reason: *id234
 - decision: delta
   delta: &id235
-  - cap-shape_x
   - bruises_t
   - odor_a
   - gill-size_b
   - gill-color_n
   - stalk-root_r
   - stalk-surface-above-ring_s
-  - stalk-surface-below-ring_y
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
@@ -5865,28 +4889,22 @@
   - population_s
   - habitat_g
   pi:
-  - cap-surface_y
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id235
 - decision: pi
   delta:
-  - cap-shape_x
   - gill-size_b
   pi: &id236
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -5904,7 +4922,6 @@
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -5913,12 +4930,8 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -5941,16 +4954,13 @@
   - population_n
   - habitat_m
   pi:
-  - cap-surface_s
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id238
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
   - gill-size_b
   - population_y
@@ -5962,8 +4972,6 @@
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -5975,12 +4983,8 @@
   reason: *id239
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_g
   - bruises_t
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -5988,11 +4992,9 @@
   - ring-type_p
   - population_s
   pi: &id240
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -6001,12 +5003,10 @@
 - decision: delta
   delta: &id241
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -6015,25 +5015,19 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id241
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   pi: &id242
-  - cap-surface_s
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -6049,12 +5043,8 @@
   - habitat_l
   reason: *id242
 - decision: pi
-  delta:
-  - cap-shape_x
-  - stalk-shape_t
+  delta: []
   pi: &id243
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -6079,7 +5069,6 @@
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -6087,12 +5076,8 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -6100,7 +5085,6 @@
   reason: *id244
 - decision: delta
   delta: &id245
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - odor_a
@@ -6116,16 +5100,13 @@
   - population_n
   - habitat_g
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id245
 - decision: delta
   delta: &id246
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - odor_a
@@ -6141,27 +5122,21 @@
   - population_s
   - habitat_m
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id246
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   pi: &id247
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -6191,10 +5166,8 @@
   - population_n
   - habitat_m
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id248
@@ -6216,24 +5189,18 @@
   - population_n
   - habitat_m
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id249
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   pi: &id250
-  - cap-surface_y
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -6250,9 +5217,7 @@
   reason: *id250
 - decision: pi
   delta:
-  - cap-color_n
   - bruises_t
-  - gill-color_p
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -6261,13 +5226,10 @@
   - ring-type_p
   - spore-print-color_n
   pi: &id251
-  - cap-shape_f
-  - cap-surface_y
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - population_v
@@ -6280,7 +5242,6 @@
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -6290,7 +5251,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
   - bruises_f
   - gill-attachment_f
   - gill-color_h
@@ -6300,12 +5260,9 @@
   reason: *id252
 - decision: delta
   delta: &id253
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -6315,25 +5272,18 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id253
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id254
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -6354,8 +5304,6 @@
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
@@ -6364,31 +5312,23 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id255
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
   - population_y
   - habitat_g
   pi: &id256
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -6400,12 +5340,10 @@
   reason: *id256
 - decision: delta
   delta: &id257
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -6415,24 +5353,17 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id257
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   pi: &id258
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -6465,34 +5396,27 @@
   - population_s
   - habitat_m
   pi:
-  - cap-surface_y
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id259
 - decision: delta
   delta: &id260
   - cap-shape_b
-  - cap-color_n
   - odor_n
   - gill-attachment_a
   - gill-size_b
-  - gill-color_y
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_o
   - stalk-color-below-ring_o
   - veil-color_n
   - ring-type_p
-  - spore-print-color_y
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-root_?
   - ring-number_o
   - population_v
@@ -6500,14 +5424,10 @@
   reason: *id260
 - decision: delta
   delta: &id261
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -6519,19 +5439,16 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id261
 - decision: delta
   delta: &id262
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_g
@@ -6540,33 +5457,25 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id262
 - decision: delta
   delta: &id263
-  - cap-color_u
   - odor_n
-  - gill-color_p
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
-  - ring-type_f
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - stalk-root_?
   - veil-color_w
   - ring-number_o
@@ -6587,28 +5496,19 @@
   - ring-type_p
   - habitat_g
   pi: &id264
-  - cap-surface_y
-  - cap-color_b
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - veil-color_w
-  - spore-print-color_r
   - population_v
   reason: *id264
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id265
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -6625,8 +5525,6 @@
   reason: *id265
 - decision: delta
   delta: &id266
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
@@ -6639,10 +5537,8 @@
   - population_c
   - habitat_w
   pi:
-  - cap-surface_s
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-root_?
   - veil-color_w
   - ring-type_e
@@ -6650,12 +5546,10 @@
   reason: *id266
 - decision: delta
   delta: &id267
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -6665,8 +5559,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -6675,14 +5567,11 @@
   reason: *id267
 - decision: delta
   delta: &id268
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_g
@@ -6693,20 +5582,15 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id268
 - decision: delta
   delta: &id269
-  - cap-shape_x
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -6715,10 +5599,8 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
@@ -6737,12 +5619,8 @@
   - population_c
   - habitat_w
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_p
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-root_?
   - veil-color_w
   - ring-type_e
@@ -6750,10 +5628,8 @@
   reason: *id270
 - decision: pi
   delta:
-  - cap-shape_x
   - bruises_t
   - gill-size_b
-  - stalk-shape_t
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -6761,13 +5637,10 @@
   - ring-type_p
   - habitat_g
   pi: &id271
-  - cap-surface_s
-  - cap-color_b
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -6776,22 +5649,17 @@
 - decision: delta
   delta: &id272
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -6800,14 +5668,11 @@
   reason: *id272
 - decision: delta
   delta: &id273
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -6828,7 +5693,6 @@
   - cap-color_w
   - bruises_t
   - gill-size_b
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
   - stalk-color-above-ring_w
@@ -6836,13 +5700,10 @@
   - ring-type_p
   - habitat_g
   pi: &id274
-  - cap-shape_f
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -6851,12 +5712,10 @@
 - decision: delta
   delta: &id275
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -6864,10 +5723,8 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -6875,13 +5732,9 @@
   reason: *id275
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
   pi: &id276
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -6905,7 +5758,6 @@
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_f
@@ -6915,8 +5767,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -6925,13 +5775,9 @@
   reason: *id277
 - decision: delta
   delta: &id278
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
@@ -6940,10 +5786,8 @@
   - population_y
   - habitat_d
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
@@ -6951,22 +5795,18 @@
 - decision: delta
   delta: &id279
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -6980,7 +5820,6 @@
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -6989,11 +5828,8 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
@@ -7005,7 +5841,6 @@
   - odor_l
   - gill-spacing_w
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -7014,26 +5849,19 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - gill-attachment_f
   - gill-size_n
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id281
 - decision: pi
   delta:
-  - cap-shape_x
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   pi: &id282
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -7050,12 +5878,10 @@
   reason: *id282
 - decision: delta
   delta: &id283
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_f
@@ -7065,8 +5891,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -7075,13 +5899,9 @@
   reason: *id283
 - decision: pi
   delta:
-  - cap-shape_x
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-above-ring_w
   pi: &id284
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -7100,12 +5920,9 @@
   reason: *id284
 - decision: delta
   delta: &id285
-  - cap-shape_x
-  - cap-color_n
   - odor_n
   - gill-attachment_a
   - gill-size_b
-  - gill-color_y
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_o
@@ -7114,10 +5931,8 @@
   - ring-type_p
   - spore-print-color_n
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-root_?
   - ring-number_o
   - population_v
@@ -7130,8 +5945,6 @@
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_f
@@ -7141,7 +5954,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-shape_f
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -7150,12 +5962,8 @@
   reason: *id286
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-color-above-ring_w
   pi: &id287
-  - cap-surface_s
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -7175,14 +5983,11 @@
   reason: *id287
 - decision: delta
   delta: &id288
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -7193,20 +5998,16 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id288
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id289
   - cap-shape_k
-  - cap-surface_s
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -7225,14 +6026,10 @@
   reason: *id289
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id290
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -7250,18 +6047,14 @@
   reason: *id290
 - decision: pi
   delta:
-  - cap-shape_x
   - gill-size_b
   pi: &id291
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -7280,32 +6073,24 @@
   - odor_l
   - gill-spacing_w
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
-  - spore-print-color_u
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - gill-attachment_f
   - gill-size_n
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id292
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -7313,11 +6098,9 @@
   - ring-type_p
   - population_s
   pi: &id293
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -7325,12 +6108,10 @@
   reason: *id293
 - decision: delta
   delta: &id294
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -7340,8 +6121,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -7350,7 +6129,6 @@
   reason: *id294
 - decision: delta
   delta: &id295
-  - cap-shape_x
   - bruises_t
   - odor_l
   - gill-size_b
@@ -7365,22 +6143,18 @@
   - population_s
   - habitat_g
   pi:
-  - cap-surface_s
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id295
 - decision: delta
   delta: &id296
-  - cap-shape_x
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -7389,11 +6163,8 @@
   - population_y
   - habitat_d
   pi:
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -7405,7 +6176,6 @@
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -7415,7 +6185,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-shape_f
   - bruises_f
   - gill-attachment_f
   - gill-color_h
@@ -7425,12 +6194,10 @@
   reason: *id297
 - decision: delta
   delta: &id298
-  - cap-shape_x
   - cap-color_w
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_f
@@ -7440,7 +6207,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - gill-color_h
@@ -7450,14 +6216,10 @@
   reason: *id298
 - decision: pi
   delta:
-  - cap-shape_x
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   pi: &id299
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -7475,14 +6237,10 @@
   reason: *id299
 - decision: delta
   delta: &id300
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -7493,19 +6251,16 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id300
 - decision: delta
   delta: &id301
-  - cap-color_n
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -7515,8 +6270,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -7525,13 +6278,9 @@
   reason: *id301
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id302
-  - cap-surface_s
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -7554,16 +6303,12 @@
   - population_y
   - habitat_g
   pi: &id303
-  - cap-shape_f
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -7575,19 +6320,14 @@
   reason: *id303
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
-  - gill-color_p
   - habitat_g
   pi: &id304
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -7600,7 +6340,6 @@
   reason: *id304
 - decision: delta
   delta: &id305
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - odor_l
@@ -7616,29 +6355,22 @@
   - population_n
   - habitat_m
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id305
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
-  - gill-color_p
   - population_y
   - habitat_g
   pi: &id306
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -7650,20 +6382,16 @@
   reason: *id306
 - decision: pi
   delta:
-  - cap-shape_x
   - odor_n
   - gill-color_w
-  - stalk-surface-below-ring_y
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id307
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - stalk-root_?
   - stalk-surface-above-ring_k
   - stalk-color-below-ring_n
@@ -7675,14 +6403,10 @@
   reason: *id307
 - decision: delta
   delta: &id308
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -7694,7 +6418,6 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id308
@@ -7716,29 +6439,23 @@
   - population_n
   - habitat_m
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id309
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   - population_y
   - habitat_d
   pi: &id310
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -7750,20 +6467,15 @@
   reason: *id310
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
   - population_y
   - habitat_g
   pi: &id311
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -7775,48 +6487,37 @@
   reason: *id311
 - decision: delta
   delta: &id312
-  - cap-shape_x
-  - cap-color_n
   - odor_n
   - gill-attachment_a
   - gill-size_b
-  - gill-color_o
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_o
   - stalk-color-below-ring_o
   - veil-color_o
   - ring-type_p
-  - spore-print-color_o
   - population_c
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-root_?
   - ring-number_o
   - habitat_l
   reason: *id312
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
   pi: &id313
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -7827,11 +6528,9 @@
   delta: &id314
   - cap-shape_b
   - cap-surface_f
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - gill-color_p
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -7843,18 +6542,14 @@
   pi:
   - bruises_f
   - gill-attachment_f
-  - stalk-shape_e
   - stalk-root_?
   - veil-color_w
   - spore-print-color_w
   reason: *id314
 - decision: delta
   delta: &id315
-  - cap-shape_s
   - cap-surface_f
-  - cap-color_n
   - odor_n
-  - gill-color_p
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -7868,26 +6563,20 @@
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - habitat_u
   reason: *id315
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
   - habitat_d
   pi: &id316
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -7915,23 +6604,17 @@
   - population_s
   - habitat_g
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
-  - stalk-shape_e
   - stalk-root_?
   - veil-color_w
   - spore-print-color_w
   reason: *id317
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   pi: &id318
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -7950,8 +6633,6 @@
   reason: *id318
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
   - gill-color_w
   - stalk-root_e
@@ -7963,31 +6644,23 @@
   - spore-print-color_n
   - population_s
   pi: &id319
-  - cap-surface_y
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - habitat_u
   reason: *id319
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_g
   - gill-size_b
-  - gill-color_p
   - habitat_g
   pi: &id320
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -8005,18 +6678,14 @@
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -8025,7 +6694,6 @@
   reason: *id321
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - gill-color_w
@@ -8038,25 +6706,21 @@
   - spore-print-color_n
   - population_s
   pi: &id322
-  - cap-surface_s
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - habitat_u
   reason: *id322
 - decision: delta
   delta: &id323
-  - cap-shape_x
   - cap-surface_f
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -8066,28 +6730,20 @@
   - population_y
   - habitat_d
   pi:
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id323
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
-  - gill-color_p
   - population_y
   pi: &id324
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -8100,14 +6756,11 @@
   reason: *id324
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id325
   - cap-shape_k
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -8125,12 +6778,8 @@
   reason: *id325
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-color-below-ring_w
   pi: &id326
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -8163,23 +6812,18 @@
   - population_s
   - habitat_g
   pi: &id327
-  - cap-shape_f
-  - cap-surface_s
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id327
 - decision: pi
   delta:
-  - cap-color_g
   - bruises_t
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -8187,12 +6831,9 @@
   - ring-type_p
   - habitat_g
   pi: &id328
-  - cap-shape_f
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
@@ -8200,7 +6841,6 @@
   reason: *id328
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
   - gill-size_b
   pi: &id329
@@ -8210,8 +6850,6 @@
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -8224,12 +6862,8 @@
   - habitat_p
   reason: *id329
 - decision: pi
-  delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
+  delta: []
   pi: &id330
-  - cap-surface_y
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -8250,7 +6884,6 @@
   reason: *id330
 - decision: delta
   delta: &id331
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - odor_a
@@ -8265,22 +6898,18 @@
   - population_s
   - habitat_g
   pi:
-  - cap-surface_s
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id331
 - decision: delta
   delta: &id332
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -8289,24 +6918,17 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id332
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   pi: &id333
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -8325,14 +6947,10 @@
   reason: *id333
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id334
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -8350,9 +6968,7 @@
   reason: *id334
 - decision: delta
   delta: &id335
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_n
   - odor_n
   - stalk-root_e
   - stalk-surface-above-ring_s
@@ -8368,26 +6984,20 @@
   - gill-spacing_c
   - gill-size_n
   - gill-color_g
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - habitat_u
   reason: *id335
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_g
   - gill-size_b
   - population_y
   pi: &id336
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -8400,13 +7010,9 @@
   reason: *id336
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   pi: &id337
-  - cap-surface_s
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -8429,15 +7035,12 @@
   - gill-size_b
   - habitat_g
   pi: &id338
-  - cap-shape_f
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -8455,7 +7058,6 @@
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
@@ -8463,11 +7065,8 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
@@ -8475,19 +7074,14 @@
   reason: *id339
 - decision: pi
   delta:
-  - cap-shape_x
   - gill-size_b
-  - gill-color_p
   - population_y
   pi: &id340
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -8500,7 +7094,6 @@
   reason: *id340
 - decision: delta
   delta: &id341
-  - cap-shape_x
   - cap-color_w
   - odor_n
   - gill-spacing_w
@@ -8513,11 +7106,9 @@
   - population_n
   - habitat_g
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - gill-color_g
-  - stalk-shape_e
   - stalk-root_?
   - stalk-surface-below-ring_k
   - veil-color_w
@@ -8525,13 +7116,11 @@
   reason: *id341
 - decision: delta
   delta: &id342
-  - cap-shape_x
   - cap-surface_f
   - cap-color_w
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -8565,21 +7154,17 @@
   - population_n
   - habitat_g
   pi:
-  - cap-surface_y
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id343
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_n
   - odor_n
   - gill-color_w
-  - stalk-surface-below-ring_y
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id344
@@ -8588,7 +7173,6 @@
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - stalk-root_?
   - stalk-surface-above-ring_k
   - stalk-color-below-ring_n
@@ -8601,12 +7185,9 @@
 - decision: delta
   delta: &id345
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -8614,10 +7195,8 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -8625,11 +7204,9 @@
   reason: *id345
 - decision: pi
   delta:
-  - cap-color_g
   - bruises_t
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_f
   - stalk-color-above-ring_w
@@ -8638,22 +7215,16 @@
   - population_s
   - habitat_g
   pi: &id346
-  - cap-shape_f
-  - cap-surface_s
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - spore-print-color_h
   reason: *id346
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
-  - gill-color_p
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -8664,23 +7235,19 @@
   - population_s
   - habitat_g
   pi: &id347
-  - cap-surface_s
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id347
 - decision: delta
   delta: &id348
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - ring-type_p
@@ -8688,11 +7255,8 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - stalk-color-below-ring_p
   - veil-color_w
@@ -8700,7 +7264,6 @@
   reason: *id348
 - decision: delta
   delta: &id349
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - odor_l
@@ -8715,23 +7278,18 @@
   - population_n
   - habitat_g
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id349
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-below-ring_w
   pi: &id350
   - cap-shape_k
-  - cap-surface_y
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -8751,24 +7309,19 @@
 - decision: delta
   delta: &id351
   - cap-shape_b
-  - cap-color_n
   - odor_n
   - gill-attachment_a
   - gill-size_b
-  - gill-color_o
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_o
   - stalk-color-below-ring_o
   - veil-color_n
   - ring-type_p
-  - spore-print-color_b
   - population_c
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-spacing_c
-  - stalk-shape_e
   - stalk-root_?
   - ring-number_o
   - habitat_l
@@ -8780,8 +7333,6 @@
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_s
@@ -8791,7 +7342,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-shape_f
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -8801,7 +7351,6 @@
 - decision: delta
   delta: &id353
   - cap-shape_b
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
@@ -8814,25 +7363,20 @@
   - population_s
   - habitat_g
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - gill-color_g
-  - stalk-shape_e
   - stalk-root_?
   - veil-color_w
   - spore-print-color_w
   reason: *id353
 - decision: delta
   delta: &id354
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_w
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -8844,39 +7388,32 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id354
 - decision: delta
   delta: &id355
-  - cap-shape_x
   - bruises_t
   - odor_l
   - gill-size_b
   - gill-color_w
   - stalk-root_r
   - stalk-surface-above-ring_s
-  - stalk-surface-below-ring_y
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   - ring-type_p
   - spore-print-color_n
   - population_s
   pi:
-  - cap-surface_y
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - habitat_p
   reason: *id355
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
   - gill-color_w
   - stalk-root_e
@@ -8888,12 +7425,10 @@
   - spore-print-color_k
   - population_s
   pi: &id356
-  - cap-surface_y
   - odor_p
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   - habitat_u
@@ -8904,7 +7439,6 @@
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -8912,12 +7446,8 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -8940,24 +7470,19 @@
   - population_s
   - habitat_m
   pi:
-  - cap-surface_s
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id358
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id359
   - cap-shape_k
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -8975,12 +7500,10 @@
   reason: *id359
 - decision: delta
   delta: &id360
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -8990,24 +7513,18 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id360
 - decision: delta
   delta: &id361
-  - cap-shape_x
   - cap-surface_f
   - cap-color_w
   - bruises_t
   - odor_l
   - gill-spacing_w
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -9018,25 +7535,19 @@
   pi:
   - gill-attachment_f
   - gill-size_n
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id361
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
-  - gill-color_p
   pi: &id362
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -9050,12 +7561,8 @@
   reason: *id362
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - habitat_d
   pi: &id363
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -9075,20 +7582,15 @@
   reason: *id363
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
   - population_y
   - habitat_d
   pi: &id364
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -9103,8 +7605,6 @@
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -9113,25 +7613,19 @@
   - spore-print-color_k
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id365
 - decision: delta
   delta: &id366
-  - cap-shape_x
   - cap-color_w
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_k
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_f
   - stalk-surface-below-ring_f
@@ -9141,7 +7635,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -9150,20 +7643,15 @@
   reason: *id366
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_g
   - gill-size_b
   - population_y
   - habitat_g
   pi: &id367
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -9175,14 +7663,10 @@
   reason: *id367
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   pi: &id368
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -9201,18 +7685,14 @@
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   - population_y
   pi: &id369
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -9225,8 +7705,6 @@
   reason: *id369
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_g
   - gill-color_n
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -9237,27 +7715,21 @@
   - population_s
   - habitat_d
   pi: &id370
-  - cap-surface_s
   - bruises_f
   - odor_c
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id370
 - decision: delta
   delta: &id371
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -9268,14 +7740,12 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id371
 - decision: delta
   delta: &id372
-  - cap-shape_x
   - cap-color_w
   - bruises_t
   - odor_a
@@ -9291,21 +7761,17 @@
   - population_n
   - habitat_g
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id372
 - decision: delta
   delta: &id373
   - cap-surface_f
-  - cap-color_n
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -9315,7 +7781,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-shape_f
   - bruises_f
   - gill-attachment_f
   - gill-color_h
@@ -9325,13 +7790,10 @@
   reason: *id373
 - decision: delta
   delta: &id374
-  - cap-shape_x
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -9341,28 +7803,21 @@
   - population_y
   - habitat_d
   pi:
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id374
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
   - habitat_d
   pi: &id375
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -9375,14 +7830,10 @@
   reason: *id375
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id376
-  - cap-shape_f
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -9401,11 +7852,9 @@
 - decision: delta
   delta: &id377
   - cap-surface_f
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -9415,7 +7864,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
   - bruises_f
   - gill-attachment_f
   - gill-color_h
@@ -9425,19 +7873,14 @@
   reason: *id377
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
   - habitat_g
   pi: &id378
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -9450,9 +7893,7 @@
   reason: *id378
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
   - population_y
   - habitat_g
@@ -9462,8 +7903,6 @@
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -9490,24 +7929,19 @@
   - population_s
   - habitat_m
   pi:
-  - cap-surface_s
   - cap-color_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
   - veil-color_w
   - ring-number_o
   reason: *id380
 - decision: delta
   delta: &id381
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -9518,20 +7952,16 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id381
 - decision: delta
   delta: &id382
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_f
@@ -9550,15 +7980,11 @@
   reason: *id382
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   - habitat_d
   pi: &id383
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -9576,18 +8002,13 @@
 - decision: pi
   delta:
   - cap-surface_f
-  - cap-color_g
   - gill-size_b
-  - gill-color_p
   - habitat_d
   pi: &id384
-  - cap-shape_f
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -9603,16 +8024,12 @@
   - gill-size_b
   - habitat_g
   pi: &id385
-  - cap-shape_f
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_n
@@ -9625,7 +8042,6 @@
   reason: *id385
 - decision: delta
   delta: &id386
-  - cap-shape_x
   - cap-surface_f
   - cap-color_w
   - odor_n
@@ -9641,7 +8057,6 @@
   - bruises_f
   - gill-attachment_f
   - gill-color_g
-  - stalk-shape_e
   - stalk-root_?
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
@@ -9654,16 +8069,12 @@
   - population_y
   - habitat_g
   pi: &id387
-  - cap-shape_f
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_h
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_b
@@ -9675,14 +8086,11 @@
   reason: *id387
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - habitat_d
   pi: &id388
   - cap-shape_k
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -9704,16 +8112,12 @@
   - population_y
   - habitat_d
   pi: &id389
-  - cap-shape_f
-  - cap-surface_y
   - cap-color_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -9725,19 +8129,13 @@
   reason: *id389
 - decision: pi
   delta:
-  - cap-color_g
   - gill-size_b
-  - gill-color_p
   - habitat_d
   pi: &id390
-  - cap-shape_f
-  - cap-surface_y
   - bruises_f
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -9750,14 +8148,10 @@
   reason: *id390
 - decision: pi
   delta:
-  - cap-shape_x
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-color-above-ring_w
   - stalk-color-below-ring_w
   pi: &id391
-  - cap-surface_y
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -9775,13 +8169,9 @@
   reason: *id391
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id392
-  - cap-shape_f
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -9800,14 +8190,10 @@
   reason: *id392
 - decision: delta
   delta: &id393
-  - cap-shape_x
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
-  - gill-color_p
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -9819,19 +8205,14 @@
   pi:
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id393
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   pi: &id394
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - bruises_f
   - odor_f
   - gill-attachment_f
@@ -9850,14 +8231,11 @@
   reason: *id394
 - decision: pi
   delta:
-  - cap-color_n
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
   - habitat_d
   pi: &id395
   - cap-shape_k
-  - cap-surface_y
   - bruises_f
   - odor_y
   - gill-attachment_f
@@ -9875,13 +8253,10 @@
   reason: *id395
 - decision: delta
   delta: &id396
-  - cap-shape_x
-  - cap-color_g
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -9891,7 +8266,6 @@
   - population_a
   - habitat_g
   pi:
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -9900,12 +8274,8 @@
   reason: *id396
 - decision: pi
   delta:
-  - stalk-shape_t
   - stalk-color-below-ring_w
   pi: &id397
-  - cap-shape_f
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f
@@ -9926,12 +8296,10 @@
 - decision: delta
   delta: &id398
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_w
@@ -9939,10 +8307,8 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
@@ -9950,10 +8316,8 @@
   reason: *id398
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-surface_f
   - gill-size_b
-  - gill-color_p
   - population_y
   - habitat_g
   pi: &id399
@@ -9962,8 +8326,6 @@
   - odor_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-shape_e
-  - stalk-root_b
   - stalk-surface-above-ring_k
   - stalk-surface-below-ring_k
   - stalk-color-above-ring_p
@@ -9975,7 +8337,6 @@
   reason: *id399
 - decision: pi
   delta:
-  - cap-shape_x
   - gill-spacing_w
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -9986,27 +8347,21 @@
   - population_s
   - habitat_d
   pi: &id400
-  - cap-surface_s
-  - cap-color_p
   - bruises_f
   - odor_c
   - gill-attachment_f
   - gill-size_n
   - gill-color_g
-  - stalk-shape_e
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   reason: *id400
 - decision: delta
   delta: &id401
   - cap-surface_f
-  - cap-color_n
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
@@ -10015,10 +8370,8 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -10029,7 +8382,6 @@
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-below-ring_g
@@ -10038,24 +8390,18 @@
   - population_y
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
-  - cap-color_e
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-above-ring_p
   - veil-color_w
   - ring-number_o
   reason: *id402
 - decision: delta
   delta: &id403
-  - cap-color_n
   - odor_n
   - gill-spacing_w
   - gill-size_b
   - gill-color_n
-  - stalk-shape_t
   - stalk-root_e
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
@@ -10065,8 +8411,6 @@
   - population_s
   - habitat_g
   pi:
-  - cap-shape_f
-  - cap-surface_s
   - bruises_f
   - gill-attachment_f
   - veil-color_w
@@ -10075,12 +8419,10 @@
   reason: *id403
 - decision: delta
   delta: &id404
-  - cap-color_g
   - bruises_t
   - odor_n
   - gill-size_b
   - gill-color_u
-  - stalk-shape_t
   - stalk-surface-above-ring_s
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_g
@@ -10088,11 +8430,8 @@
   - spore-print-color_n
   - habitat_d
   pi:
-  - cap-shape_f
-  - cap-surface_y
   - gill-attachment_f
   - gill-spacing_c
-  - stalk-root_b
   - stalk-color-below-ring_p
   - veil-color_w
   - ring-number_o
@@ -10100,7 +8439,6 @@
   reason: *id404
 - decision: pi
   delta:
-  - cap-shape_x
   - cap-color_w
   - gill-color_u
   - stalk-surface-above-ring_s
@@ -10111,27 +8449,20 @@
   - spore-print-color_k
   - habitat_d
   pi: &id405
-  - cap-surface_s
   - bruises_f
   - odor_c
   - gill-attachment_f
   - gill-spacing_c
   - gill-size_n
-  - stalk-shape_e
-  - stalk-root_b
   - veil-color_w
   - ring-number_o
   - population_v
   reason: *id405
 - decision: pi
   delta:
-  - cap-shape_x
-  - stalk-shape_t
   - stalk-surface-below-ring_s
   - stalk-color-above-ring_w
   pi: &id406
-  - cap-surface_s
-  - cap-color_e
   - bruises_f
   - odor_s
   - gill-attachment_f

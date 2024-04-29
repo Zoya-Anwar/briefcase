@@ -5,7 +5,7 @@ from briefcase.enums import decision_enum
 from briefcase.case import Case
 
 
-class PowerDetector:
+class PowerDetector():
     def __init__(self, priority_order):
         self.priority_order = priority_order
         self.factor_list = {decision_enum.pi: set(),

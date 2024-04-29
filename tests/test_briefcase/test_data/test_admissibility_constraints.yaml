@@ -16,8 +16,112 @@ all:
         reason: [ p1,p3,p7 ]
    fails: []
 
-no_new:
-   name: NO_NEW
+no_inconsistency_true:
+   name: NO_INCONSISTENCY
+   cases: []
+   adds:
+      - pi: [ p1,p2,p3,p4 ]
+        delta: [ d1, d2, d3 ]
+        decision: pi
+        reason: [ p1, p3 ]
+      - pi: [ p1,p3,p7 ]
+        delta: [ d5, d2, d3 ]
+        decision: delta
+        reason: [ d5, d2, d3 ]
+      - pi: [ p1,p3,p7 ]
+        delta: [ d5, d2, d3 ]
+        decision: pi
+        reason: [ p1,p3,p7 ]
+   fails:
+      - pi: [ p1,p3,p7 ]
+        delta: [ d5, d2, d3 ]
+        decision: pi
+        reason: [ p1,p3,p7 ]
+
+no_inconsistency:
+   name: NO_INCONSISTENCY
+   cases:
+      - pi: [ p1,p2,p3,p4 ] # case 1
+        delta: [ d1, d2, d3 ]
+        decision: pi
+        reason: [ p1, p3 ]
+      - pi: [ p1,p3,p7, p8] # case 2
+        delta: [ d5, d2, d3 ]
+        decision: delta
+        reason: [ d5, d2, d3 ]
+      - pi: [ p1,p3,p7 ] # case 3
+        delta: [ d5, d2, d3 ]
+        decision: pi
+        reason: [ p1,p3,p7 ]
+   adds:
+      - pi: [ p1,p3,p7 ] # inconsistent equal to case 3 - admit
+        delta: [ d5, d2, d3 ]
+        decision: pi
+        reason: [ p1,p3,p7 ]
+      - pi: [ p1,p3,p7,p11 ]  # inconsistent represented by case 3 - admit
+        delta: [ d5, d2]
+        decision: pi
+        reason: [ p1,p3,p7,p11 ]
+      - pi: [ p10] # consistent new case - FAIL
+        delta: [ d8]
+        decision: pi
+        reason: [ p10]
+      - pi: [ p1,p2,p3,p4 ] # inconsistent with case 1 - FAIL
+        delta: [ d1, d2, d3 ]
+        decision: delta
+        reason: [ d1, d2, d3 ]
+      - pi: [ p1, p3 ]  # inconsistent with case 2, not represented by case 3- FAIL
+        delta: [ d5, d2, d3]
+        decision: pi
+        reason: [ p1,p3 ]
+      - pi: [ p1, p8 ]  # inconsistent with case 2, not represented by case 3- FAIL
+        delta: [ d5, d2, d3, d9 ]
+        decision: pi
+        reason: [ p1, p8  ]
+      - pi: [ p1,p3,p7] # inconsistent with case 2, not represented by case 3 - FAIL
+        delta: [ d5, d2, d3, d4 ]
+        decision: pi
+        reason: [ p1,p3,p7]
+      - pi: [ p1,p3,p7,p8] # inconsistent with case 2, not represented by case 3 - FAIL
+        delta: [ d5, d2, d3, d4 ]
+        decision: pi
+        reason: [ p1,p3,p7,p8 ]
+   fails:
+      - pi: [ p1,p3,p7 ] # inconsistent equal to case 3 - admit
+        delta: [ d5, d2, d3 ]
+        decision: pi
+        reason: [ p1,p3,p7 ]
+      - pi: [ p1,p3,p7,p11 ]  # inconsistent represented by case 3 - admit
+        delta: [ d5, d2]
+        decision: pi
+        reason: [ p1,p3,p7,p11 ]
+      - pi: [ p10] # consistent new case - FAIL
+        delta: [ d8]
+        decision: pi
+        reason: [ p10]
+      - pi: [ p1,p2,p3,p4 ] # inconsistent with case 1 - FAIL
+        delta: [ d1, d2, d3 ]
+        decision: delta
+        reason: [ d1, d2, d3 ]
+      - pi: [ p1, p3 ]  # inconsistent with case 2, not represented by case 3- FAIL
+        delta: [ d5, d2, d3]
+        decision: pi
+        reason: [ p1,p3 ]
+      - pi: [ p1, p8 ]  # inconsistent with case 2, not represented by case 3- FAIL
+        delta: [ d5, d2, d3, d9 ]
+        decision: pi
+        reason: [ p1, p8  ]
+      - pi: [ p1,p3,p7] # inconsistent with case 2, not represented by case 3 - FAIL
+        delta: [ d5, d2, d3, d4 ]
+        decision: pi
+        reason: [ p1,p3,p7]
+      - pi: [ p1,p3,p7,p8] # inconsistent with case 2, not represented by case 3 - FAIL
+        delta: [ d5, d2, d3, d4 ]
+        decision: pi
+        reason: [ p1,p3,p7,p8 ]
+
+no_changed_order:
+   name: NO_CHANGED_ORDER
    cases:
       - pi: [ p1,p2,p3,p4 ] # case 1
         delta: [ d1, d2, d3 ]
@@ -129,8 +233,8 @@ no_involvement:
         decision: pi
         reason: [ p1,p3,p7 ]
 
-horty:
-   name: HORTY
+no_new:
+   name: NO_NEW
    cases:
       - pi: [ p1,p2,p3,p4 ] # case 1
         delta: [ d1, d2, d3 ]
