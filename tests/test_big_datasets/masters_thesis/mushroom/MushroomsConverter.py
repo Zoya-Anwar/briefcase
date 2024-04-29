@@ -103,7 +103,7 @@ def get_existing_test_data(cluster="corr", test_split="0.25"):
     except FileNotFoundError:
         print(f"File '{filename}' not found.")
         print(f"Creating new file")
-        data = MC.mushroom_to_yaml(cluster, float(test_split))
+        data = mushroom_to_yaml(cluster, float(test_split))
     except Exception as e:
         print("An error occurred:", str(e))
 
