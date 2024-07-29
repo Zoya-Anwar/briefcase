@@ -1,6 +1,6 @@
 import pandas as pd
 import import_ipynb
-from big_dataset_utility.cluster_binary_factors import cluster_factors_voting, cluster_factors_rand_un, \
+from big_dataset_utility.feature_labeling.cluster_binary_factors import cluster_factors_voting, cluster_factors_rand_un, \
     cluster_factors_corr, cluster_factors_rand
 import yaml
 

@@ -58,8 +58,24 @@ class CaseBase:
 
         return count
 
+    def get_tainted_cases(self):
+        """
+        @return : number of cases which are associated with an inconsistency in current cb
+        """
+
+        # loop through all cases in order
+        cases = []
+        for case in self.cases:
+            if not self.is_consistent_with(case):
+                cases.append(case)
+
+        return cases
+
+    def size(self):
+        return len(self.cases)
+
     def metrics(self):
-        size = len(self.cases)
+        size = self.size()
         inconsistencies = self.count_tainted_cases()
         max_edges_pi, max_edges_delta = self.order.PD.max_edges()
         print("Number of cases: ", size)

@@ -2,7 +2,7 @@ from briefcase.enums import decision_enum
 from briefcase.case_base import CaseBase
 from briefcase.case import Case
 import pandas as pd
-from big_dataset_utility.cluster_binary_factors import cluster_factors_voting, cluster_factors_rand_un, \
+from big_dataset_utility.feature_labeling.cluster_binary_factors import cluster_factors_voting, cluster_factors_rand_un, \
     cluster_factors_corr, cluster_factors_rand, reduce_df
 import yaml
 import math
